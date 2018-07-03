@@ -288,7 +288,7 @@ def HLM(F_M,F_D,k,M,D):
 @numba.jit
 def rank(p,req_point):
     p_r=sorted(p,reverse=True)
-    q=0 #记录重复次数
+    q=0 #record repetitions
     rank=1
     for i in range(len(p)):
         if p_r[i]==req_point:
@@ -356,7 +356,7 @@ def __end__():
 
 def test_speed(F_M=495*2,F_D=383*2,k=100,N=1):
     t1=datetime.datetime.now()
-    # 初始化
+    # init
     global M_num,D_num,MD_num
     global m_d,A
     y_local=np.zeros(MD_num)
