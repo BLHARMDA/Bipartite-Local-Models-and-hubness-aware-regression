@@ -1,1 +1,0 @@
-Folder for saving results of all diseases
